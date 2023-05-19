@@ -31,15 +31,11 @@ async function run() {
         // Connect the client to the server	(optional starting in v4.7)
         await client.connect();
 
-        const categoryCollection = client.db("ToyStory").collection("category");
-        const subCategoriesCollection = client.db("ToyStory").collection("categories");
+        // const categoryCollection = client.db("ToyStory").collection("category");
+        // const subCategoriesCollection = client.db("ToyStory").collection("categories");
         const toyCollection = client.db("ToyStory").collection("toys");
 
-        app.get('/category', async (req, res) => {
-            console.log(123)
-            const result = await categoryCollection.find().toArray();
-            res.send(result);
-        });
+       
         app.get('/toys', async (req, res) => {
             console.log(123)
             const cursor = toyCollection.find().sort( { "price": 1 } );
@@ -49,38 +45,45 @@ async function run() {
 
         app.get('/toys/my', async (req, res) => {
             const email = req.query.email;
+            console.log()
             const query = { email: email };
             const toys = await toyCollection.find(query).toArray();
             res.send(toys);
         });
 
-        app.get('/subCategories', async (req, res) => {
-            const id = req.params.id
-            const query = {id: id}
-            const result = await subCategoriesCollection.find(query).toArray();
-            res.send(result);
-        });
+        // app.get('/subCategories', async (req, res) => {
+        //     const id = req.params.id
+        //     const query = {id: id}
+        //     const result = await subCategoriesCollection.find(query).toArray();
+        //     res.send(result);
+        // });
         
 
-        app.get('/category', async (req, res) => {
+        // app.get('/category', async (req, res) => {
             
-            console.log(req.query)
+        //     console.log(req.query)
 
             
             
-            // let queryItem = {};
-            // if (req.query?.email) {
-            //     queryItem = { email: req.query.email }
-            // }
-            const result = await categoryCollection.find().toArray();
-            res.send(result)
-        });
+        //     // let queryItem = {};
+        //     // if (req.query?.email) {
+        //     //     queryItem = { email: req.query.email }
+        //     // }
+        //     const result = await categoryCollection.find().toArray();
+        //     res.send(result)
+        // });
 
         app.post('/postToy', async (req, res) => {
             const toyData = req.body;
             const result = await toyCollection.insertOne(toyData)
             res.send(result);
         });
+
+        app.delete('/toys/my/:id', async (req, res) => {
+            const id = req.params.id;
+            const result = await toyCollection.deleteOne({ _id: new ObjectId(id) });
+            res.send(result);
+        })
 
 
         // Send a ping to confirm a successful connection
