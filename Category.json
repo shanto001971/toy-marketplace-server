@@ -1,19 +1,19 @@
 [
     {
       "Picture": "https://www.mother.ly/wp-content/uploads/legacy-images/math-toys-for-preschoolers-8.jpg",
-      "Name": "math toys",
+      "Name": "sports car",
       "Price": 10.99,
       "Rating": 4.5
     },
     {
       "Picture": "https://www.parents.com/thmb/Ngf2F8EvyUWq2Wjp9j1Ud5Nl3fM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vtech-touch-and-learn-53fc65fadd8342e285c3584ece1a2d72.jpeg",
-      "Name": "Language Toys",
+      "Name": "truck",
       "Price": 19.99,
       "Rating": 3.8
     },
     {
       "Picture": "https://childhood101.com/wp-content/uploads/2017/11/gears.jpg",
-      "Name": "engineering toys",
+      "Name": "regular car",
       "Price": 5.99,
       "Rating": 4.2
     }

@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 5000;
@@ -32,27 +32,55 @@ async function run() {
         await client.connect();
 
         const categoryCollection = client.db("ToyStory").collection("category");
-        const toyCollection = client.db("ToyStory").collection("product");
+        const subCategoriesCollection = client.db("ToyStory").collection("categories");
+        const toyCollection = client.db("ToyStory").collection("toys");
 
         app.get('/category', async (req, res) => {
-            const ruselt = await categoryCollection.find().toArray();
-            res.send(ruselt);
-        })
-
-        app.get('/category', async (req, res) => {
-            let query = {};
-            if (req.query?.email) {
-                query = { email: req.query.email }
-            }
-            const result = await categoryCollection.find(query).toArray();
-            res.send(result)
-        })
-
-        app.post('/category', async (req, res) => {
-            const categoryData = req.body;
-            const result = await categoryCollection.insertOne(categoryData)
+            console.log(123)
+            const result = await categoryCollection.find().toArray();
             res.send(result);
-        })
+        });
+        app.get('/toys', async (req, res) => {
+            console.log(123)
+            const cursor = toyCollection.find().sort( { "price": 1 } );
+            const result = await cursor.toArray();
+            res.send(result);
+        });
+
+        app.get('/toys/my', async (req, res) => {
+            const email = req.query.email;
+            const query = { email: email };
+            const toys = await toyCollection.find(query).toArray();
+            res.send(toys);
+        });
+
+        app.get('/subCategories', async (req, res) => {
+            const id = req.params.id
+            const query = {id: id}
+            const result = await subCategoriesCollection.find(query).toArray();
+            res.send(result);
+        });
+        
+
+        app.get('/category', async (req, res) => {
+            
+            console.log(req.query)
+
+            
+            
+            // let queryItem = {};
+            // if (req.query?.email) {
+            //     queryItem = { email: req.query.email }
+            // }
+            const result = await categoryCollection.find().toArray();
+            res.send(result)
+        });
+
+        app.post('/postToy', async (req, res) => {
+            const toyData = req.body;
+            const result = await toyCollection.insertOne(toyData)
+            res.send(result);
+        });
 
 
         // Send a ping to confirm a successful connection
