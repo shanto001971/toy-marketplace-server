@@ -1,0 +1,117 @@
+[
+  {
+    "Image": "https://static-01.daraz.com.bd/p/49646e894a587e42aa86ea0340ba80ec.jpg_720x720.jpg_.webp",
+    "Seller": "Robert Davis",
+    "Toy Name": "Sports Car 2",
+    "Sub-category": "Sports Car",
+    "Price": 24.99,
+    "Available Quantity": 8
+  },
+  {
+    "Image": "https://cdn.shopify.com/s/files/1/0447/0957/6866/products/30045627.jpg?v=1659049771",
+    "Seller": "Emily Wilson",
+    "Toy Name": "Truck 2",
+    "Sub-category": "Truck",
+    "Price": 18.99,
+    "Available Quantity": 12
+  },
+  {
+    "Image": "https://m.media-amazon.com/images/I/71-eusjz1TL._AC_SL1500_.jpg",
+    "Toy Name": "Regular Car 2",
+    "Sub-category": "Regular Car",
+    "Price": 13.99,
+    "Available Quantity": 6
+  },
+  {
+    "Image": "https://m.media-amazon.com/images/I/71iCICbcAPS._AC_SL1500_.jpg",
+    "Seller": "Michael Thompson",
+    "Toy Name": "Mini Fire Truck 2",
+    "Sub-category": "Mini Fire Truck",
+    "Price": 11.99,
+    "Available Quantity": 15
+  },
+  {
+    "Image": "https://static-01.daraz.com.bd/p/7e2e99e4e8b99096566e930357b9e347.jpg_720x720.jpg_.webp",
+    "Toy Name": "Mini Police Car 2",
+    "Sub-category": "Mini Police Car",
+    "Price": 16.99,
+    "Available Quantity": 4
+  },
+  {
+    "Image": "https://m.media-amazon.com/images/I/51V9X3Odb0L._AC_UL400_.jpg",
+    "Seller": "Jessica Lee",
+    "Toy Name": "Sports Car 3",
+    "Sub-category": "Sports Car",
+    "Price": 29.99,
+    "Available Quantity": 9
+  },
+  {
+    "Image": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/dumptruck_right_20180412_square_1024x1024@2x.jpg?v=1672960769",
+    "Toy Name": "Truck 3",
+    "Sub-category": "Truck",
+    "Price": 21.99,
+    "Available Quantity": 3
+  },
+  {
+    "Image": "https://m.media-amazon.com/images/I/61B1hhP3Z9L._SX355_.jpg",
+    "Seller": "David Martinez",
+    "Toy Name": "Regular Car 3",
+    "Sub-category": "Regular Car",
+    "Price": 16.99,
+    "Available Quantity": 7
+  },
+  {
+    "Image": "https://www.toysrus.ca/dw/image/v2/BDFX_PRD/on/demandware.static/-/Sites-toys-master-catalog/default/dwb42517e7/images/F43E28F0_1.jpg?sw=767&sh=767&sm=fit",
+    "Seller": "Olivia Clark",
+    "Toy Name": "Mini Fire Truck 3",
+    "Sub-category": "Mini Fire Truck",
+    "Price": 12.99,
+    "Available Quantity": 20
+  },
+  {
+    "Image": "https://www.lankakade.co.uk/images/products/large/546.jpg",
+    "Seller": "Daniel Harris",
+    "Toy Name": "Mini Police Car 3",
+    "Sub-category": "Mini Police Car",
+    "Price": 18.99,
+    "Available Quantity": 5
+  },
+  {
+    "Image": "https://atlas-content-cdn.pixelsquid.com/stock-images/slot-car-toy-race-track-RJzG6aC-600.jpg",
+    "Toy Name": "Sports Car 4",
+    "Sub-category": "Sports Car",
+    "Price": 26.99,
+    "Available Quantity": 18
+  },
+  {
+    "Image": "https://m.media-amazon.com/images/I/81FjGnA4AzL.jpg",
+    "Seller": "Sophia Walker",
+    "Toy Name": "Truck 4",
+    "Sub-category": "Truck",
+    "Price": 19.99,
+    "Available Quantity": 10
+  },
+  {
+    "Image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/HOT_WHEELS_Regular_Toyota_Off_Road_Truck-Hot_Wheels-a05e5-259556.jpg",
+    "Seller": "Emma Turner",
+    "Toy Name": "Regular Car 4",
+    "Sub-category": "Regular Car",
+    "Price": 14.99,
+    "Available Quantity": 6
+  },
+  {
+    "Image": "https://cdn.webshopapp.com/shops/279863/files/274518820/1600x2048x2/big-big-power-worker-mini-fire-truck.jpg",
+    "Seller": "Matthew Wilson",
+    "Toy Name": "Mini Fire Truck 4",
+    "Sub-category": "Mini Fire Truck",
+    "Price": 10.99,
+    "Available Quantity": 8
+  },
+  {
+    "Image": "https://cdn.shopify.com/s/files/1/0020/8057/1504/products/313979_1_lg_1200x1200.jpg?v=1664515675",
+    "Toy Name": "Mini Police Car 4",
+    "Sub-category": "Mini Police Car",
+    "Price": 15.99,
+    "Available Quantity": 5
+  }
+]
