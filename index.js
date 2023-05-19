@@ -38,11 +38,20 @@ async function run() {
             const ruselt = await categoryCollection.find().toArray();
             res.send(ruselt);
         })
-        app.post('/category', async(req, res) => {
+
+        app.get('/category', async (req, res) => {
+            let query = {};
+            if (req.query?.email) {
+                query = { email: req.query.email }
+            }
+            const result = await categoryCollection.find(query).toArray();
+            res.send(result)
+        })
+
+        app.post('/category', async (req, res) => {
             const categoryData = req.body;
             const result = await categoryCollection.insertOne(categoryData)
             res.send(result);
-
         })
 
 
