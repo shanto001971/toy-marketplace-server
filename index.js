@@ -37,7 +37,7 @@ async function run() {
 
 
         app.get('/toys', async (req, res) => {
-            
+
             const cursor = toyCollection.find();
             const result = await cursor.toArray();
             res.send(result);
@@ -52,6 +52,7 @@ async function run() {
         });
 
 
+
         app.get('/alltoys/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: new ObjectId(id) }
@@ -59,7 +60,7 @@ async function run() {
             res.send(result);
         })
 
-    
+
 
         app.post('/postToy', async (req, res) => {
             const toyData = req.body;
@@ -67,19 +68,17 @@ async function run() {
             res.send(result);
         });
 
-        app.patch('/toy/my/:id', async (req, res) => {
+        app.put('/alltoys/:id', async (req, res) => {
             const id = req.params.id;
             const filter = { _id: new ObjectId(id) };
-            const updated = req.body;
-            console.log(updated)
-            console.log(updatedBooking)
-
+            const option = { upsert: true };
+            const updateToy = req.body;
             const update = {
                 $set: {
-                    toys: updated
+                    price: updateToy.price, availableQuantity: updateToy.availableQuantity, detailDescription: updateToy.detailDescription
                 },
             };
-            const result = await toyCollection.updateOne(filter, update);
+            const result = await toyCollection.updateOne(filter,update,option);
             res.send(result);
         })
 
