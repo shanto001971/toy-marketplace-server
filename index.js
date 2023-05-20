@@ -43,12 +43,6 @@ async function run() {
             res.send(result);
         });
 
-        app.get('/toys/superCar', async (req, res) => {
-            const query = { subCategory: "Sports Car" };
-            const toys = await toyCollection.find(query).toArray();
-            res.send(toys);
-        });
-
         app.get('/toys/my', async (req, res) => {
             const email = req.query.email;
             console.log()
@@ -73,6 +67,25 @@ async function run() {
             const result = await toyCollection.findOne(query);
             res.send(result);
         })
+
+        app.get('/toys/subCategory', async (req, res) => {
+            const category = req.query.subCategory;
+            const query = { subCategory: category };
+            const toys = await toyCollection.find(query).toArray();
+            res.send(toys);
+        });
+        
+        // app.get('/toys/muscleCars', async (req, res) => {
+        //     const query = { subCategory: "Muscle cars" };
+        //     const toys = await toyCollection.find(query).toArray();
+        //     res.send(toys);
+        // });
+
+        // app.get('/toys/exoticCars', async (req, res) => {
+        //     const query = { subCategory: "Exotic cars" };
+        //     const toys = await toyCollection.find(query).toArray();
+        //     res.send(toys);
+        // });
 
 
 
