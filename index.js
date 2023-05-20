@@ -35,10 +35,10 @@ async function run() {
         // const subCategoriesCollection = client.db("ToyStory").collection("categories");
         const toyCollection = client.db("ToyStory").collection("toys");
 
-       
+
         app.get('/toys', async (req, res) => {
-            console.log(123)
-            const cursor = toyCollection.find().sort( { "price": 1 } );
+            
+            const cursor = toyCollection.find();
             const result = await cursor.toArray();
             res.send(result);
         });
@@ -47,37 +47,42 @@ async function run() {
             const email = req.query.email;
             console.log()
             const query = { email: email };
-            const toys = await toyCollection.find(query).toArray();
+            const toys = await toyCollection.find(query).sort({ "price": 1 }).toArray();
             res.send(toys);
         });
 
-        // app.get('/subCategories', async (req, res) => {
-        //     const id = req.params.id
-        //     const query = {id: id}
-        //     const result = await subCategoriesCollection.find(query).toArray();
-        //     res.send(result);
-        // });
-        
 
-        // app.get('/category', async (req, res) => {
-            
-        //     console.log(req.query)
+        app.get('/alltoys/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: new ObjectId(id) }
+            const result = await toyCollection.findOne(query);
+            res.send(result);
+        })
 
-            
-            
-        //     // let queryItem = {};
-        //     // if (req.query?.email) {
-        //     //     queryItem = { email: req.query.email }
-        //     // }
-        //     const result = await categoryCollection.find().toArray();
-        //     res.send(result)
-        // });
+    
 
         app.post('/postToy', async (req, res) => {
             const toyData = req.body;
             const result = await toyCollection.insertOne(toyData)
             res.send(result);
         });
+
+        app.patch('/toy/my/:id', async (req, res) => {
+            const id = req.params.id;
+            const filter = { _id: new ObjectId(id) };
+            const updated = req.body;
+            console.log(updated)
+            console.log(updatedBooking)
+
+            const update = {
+                $set: {
+                    toys: updated
+                },
+            };
+            const result = await toyCollection.updateOne(filter, update);
+            res.send(result);
+        })
+
 
         app.delete('/toys/my/:id', async (req, res) => {
             const id = req.params.id;
@@ -97,8 +102,7 @@ async function run() {
 run().catch(console.dir);
 
 
-// toy-story-3
-// yR3tTUMp3hGUJusR
+
 
 app.listen(port, () => {
     console.log(`server is running on port${port}`)
