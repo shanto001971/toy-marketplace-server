@@ -43,6 +43,12 @@ async function run() {
             res.send(result);
         });
 
+        app.get('/toys/superCar', async (req, res) => {
+            const query = { subCategory: "Sports Car" };
+            const toys = await toyCollection.find(query).toArray();
+            res.send(toys);
+        });
+
         app.get('/toys/my', async (req, res) => {
             const email = req.query.email;
             console.log()
@@ -50,6 +56,8 @@ async function run() {
             const toys = await toyCollection.find(query).sort({ "price": 1 }).toArray();
             res.send(toys);
         });
+
+
 
 
 

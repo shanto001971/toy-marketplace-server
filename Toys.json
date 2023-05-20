@@ -1,117 +1,138 @@
 [
   {
-    "photo": "https://static-01.daraz.com.bd/p/49646e894a587e42aa86ea0340ba80ec.jpg_720x720.jpg_.webp",
+    "photo": "https://m.media-amazon.com/images/I/61rvXPvQsRL._SL1010_.jpg",
     "sellerName": "Robert Davis",
-    "productName": "Sports Car 2",
-    "subCategory": "Sports Car",
+    "productName": "Super Cars 2",
+    "subCategory": "Super Cars",
     "price": 24.99,
     "availableQuantity": 8
   },
   {
-    "photo": "https://cdn.shopify.com/s/files/1/0447/0957/6866/products/30045627.jpg?v=1659049771",
+    "photo": "https://m.media-amazon.com/images/I/81L9jVxosKL.jpg",
     "sellerName": "Emily Wilson",
-    "productName": "Truck 2",
-    "subCategory": "Truck",
+    "productName": "Construction truck 2",
+    "subCategory": "Construction truck",
     "price": 18.99,
     "availableQuantity": 12
   },
   {
-    "photo": "https://m.media-amazon.com/photos/I/71-eusjz1TL._AC_SL1500_.jpg",
-    "productName": "Regular Car 2",
-    "subCategory": "Regular Car",
+    "photo": "https://cdn.dollsofindia.com/images/p/cute-toys/honda-city-car-LW21_l.jpg",
+    "productName": "Sedans Car 2",
+    "subCategory": "Sedans",
     "price": 13.99,
     "availableQuantity": 6
   },
   {
-    "photo": "https://m.media-amazon.com/photos/I/71iCICbcAPS._AC_SL1500_.jpg",
+    "photo": "https://images-na.ssl-images-amazon.com/images/I/61CZCN6kxKL._SS400_.jpg",
     "sellerName": "Michael Thompson",
-    "productName": "Mini Fire Truck 2",
-    "subCategory": "Mini Fire Truck",
+    "productName": "Pickup trucks 2",
+    "subCategory": "Pickup trucks",
     "price": 11.99,
     "availableQuantity": 15
   },
   {
-    "photo": "https://static-01.daraz.com.bd/p/7e2e99e4e8b99096566e930357b9e347.jpg_720x720.jpg_.webp",
-    "productName": "Mini Police Car 2",
-    "subCategory": "Mini Police Car",
+    "photo": "https://m.media-amazon.com/images/I/61RgOFUKIvL._AC_SL1500_.jpg",
+    "productName": "Convertibles Car 2",
+    "subCategory": "Convertibles",
     "price": 16.99,
     "availableQuantity": 4
   },
   {
-    "photo": "https://m.media-amazon.com/photos/I/51V9X3Odb0L._AC_UL400_.jpg",
+    "photo": "https://sg-test-11.slatic.net/other/roc/fb58baec3552958e9834c565c25669a9.png",
     "sellerName": "Jessica Lee",
-    "productName": "Sports Car 3",
-    "subCategory": "Sports Car",
+    "productName": "Super Cars 1",
+    "subCategory": "Super Cars",
     "price": 29.99,
     "availableQuantity": 9
   },
   {
-    "photo": "https://cdn.shopify.com/s/files/1/0149/8336/4708/products/dumptruck_right_20180412_square_1024x1024@2x.jpg?v=1672960769",
-    "productName": "Truck 3",
-    "subCategory": "Truck",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEwDBGpxEyp6fLATtwZSqMFtvhMk23P4uwZOtovpMGZDtTJ9TBglVj8w7mTN-IsVcqa_g&usqp=CAU",
+    "productName": "Construction truck 1",
+    "subCategory": "Construction truck",
     "price": 21.99,
     "availableQuantity": 3
   },
   {
-    "photo": "https://m.media-amazon.com/photos/I/61B1hhP3Z9L._SX355_.jpg",
+    "photo": "https://m.media-amazon.com/images/I/81I9-5MMW4L._SX425_.jpg",
     "sellerName": "David Martinez",
-    "productName": "Regular Car 3",
-    "subCategory": "Regular Car",
+    "productName": "Sedans Car 1",
+    "subCategory": "Sedans",
     "price": 16.99,
     "availableQuantity": 7
   },
   {
-    "photo": "https://www.toysrus.ca/dw/photo/v2/BDFX_PRD/on/demandware.static/-/Sites-toys-master-catalog/default/dwb42517e7/photos/F43E28F0_1.jpg?sw=767&sh=767&sm=fit",
+    "photo": "https://m.media-amazon.com/images/I/613qlZ0+AQL.jpg",
     "sellerName": "Olivia Clark",
-    "productName": "Mini Fire Truck 3",
-    "subCategory": "Mini Fire Truck",
+    "productName": "Pickup trucks 1",
+    "subCategory": "Pickup trucks",
     "price": 12.99,
     "availableQuantity": 20
   },
   {
-    "photo": "https://www.lankakade.co.uk/photos/products/large/546.jpg",
+    "photo": "https://images-cdn.ubuy.co.in/634e77b3901883251b5bd8a0-minitoy-toy-car-model-3-pull-back-car.jpg",
     "sellerName": "Daniel Harris",
-    "productName": "Mini Police Car 3",
-    "subCategory": "Mini Police Car",
+    "productName": "Hatchbacks Car 2",
+    "subCategory": "Hatchbacks Car",
     "price": 18.99,
     "availableQuantity": 5
   },
   {
     "photo": "https://atlas-content-cdn.pixelsquid.com/stock-photos/slot-car-toy-race-track-RJzG6aC-600.jpg",
-    "productName": "Sports Car 4",
-    "subCategory": "Sports Car",
+    "productName": "Muscle cars 1",
+    "subCategory": "Muscle cars",
     "price": 26.99,
     "availableQuantity": 18
   },
   {
-    "photo": "https://m.media-amazon.com/photos/I/81FjGnA4AzL.jpg",
+    "photo": "https://i5.walmartimages.com/asr/ba439343-d8c1-4b08-8558-7a5723e76ba0.dbb078fb93f75db9bbfa891712eef53a.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+    "productName": "Muscle cars 2",
+    "subCategory": "Muscle cars",
+    "price": 25.85,
+    "availableQuantity": 14
+  },
+  {
+    "photo": "https://i5.walmartimages.com/asr/1d7c829a-0fba-4cad-ba93-4e4f41ee705c.b33bee547456eb71f4842fcb756b2608.jpeg?odnHeight=580&odnWidth=580&odnBg=FFFFFF",
+    "productName": "Exotic cars 1",
+    "subCategory": "Exotic cars",
+    "price": 22.85,
+    "availableQuantity": 13
+  },
+  {
+    "photo": "https://5.imimg.com/data5/UK/UO/RR/SELLER-79895683/die-cast-model-car-toy-1000x1000.jpg",
+    "productName": "Exotic cars 2",
+    "subCategory": "Exotic cars",
+    "price": 25.85,
+    "availableQuantity": 14
+  },
+  {
+    "photo": "https://cdn3.volusion.com/ehw7h.qu37r/v/vspfiles/photos/categories/363-T.jpg?v-cache=1654608608",
     "sellerName": "Sophia Walker",
-    "productName": "Truck 4",
-    "subCategory": "Truck",
+    "productName": "Monster trucks 1",
+    "subCategory": "Monster trucks",
     "price": 19.99,
     "availableQuantity": 10
   },
   {
-    "photo": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/HOT_WHEELS_Regular_Toyota_Off_Road_Truck-Hot_Wheels-a05e5-259556.jpg",
+    "photo": "https://static-01.daraz.com.bd/p/e5772352edfb35bfcdd60555cadcdc6a.jpg",
     "sellerName": "Emma Turner",
-    "productName": "Regular Car 4",
-    "subCategory": "Regular Car",
+    "productName": "Hatchbacks Car 1",
+    "subCategory": "Hatchbacks",
     "price": 14.99,
     "availableQuantity": 6
   },
   {
-    "photo": "https://cdn.webshopapp.com/shops/279863/files/274518820/1600x2048x2/big-big-power-worker-mini-fire-truck.jpg",
+    "photo": "https://static-01.daraz.com.bd/p/a0ec1fe85ae3c884ec29ad6def184fdc.jpg_720x720.jpg_.webp",
     "sellerName": "Matthew Wilson",
-    "productName": "Mini Fire Truck 4",
-    "subCategory": "Mini Fire Truck",
+    "productName": "Monster trucks 2",
+    "subCategory": "Monster trucks",
     "price": 10.99,
     "availableQuantity": 8
   },
   {
-    "photo": "https://cdn.shopify.com/s/files/1/0020/8057/1504/products/313979_1_lg_1200x1200.jpg?v=1664515675",
-    "productName": "Mini Police Car 4",
+    "photo": "https://static-01.daraz.com.bd/p/41274e79d2106ffc5556118fa31768d9.jpg_720x720.jpg_.webp",
+    "productName": "Convertibles Car 4",
     "sellerName": "Matthew Wilson",
-    "subCategory": "Mini Police Car",
+    "subCategory": "Convertibles",
     "price": 15.99,
     "availableQuantity": 5
   }
